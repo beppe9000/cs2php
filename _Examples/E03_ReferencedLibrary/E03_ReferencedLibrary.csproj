@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <VersionPrefix>1.2.1.1</VersionPrefix>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <AssemblyName>E03_ReferencedLibrary</AssemblyName>
     <PackageId>E03_ReferencedLibrary</PackageId>
     <AssemblyName>E03_ReferencedLibrary</AssemblyName>
@@ -19,7 +19,7 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
   <PropertyGroup>
-    <DocumentationFile>bin\$(Configuration)\net462\$(ProjectName).xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\net472\$(ProjectName).xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);ROSLYN</DefineConstants>
@@ -30,13 +30,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Extensions\Lang.Php.Mpdf\Lang.Php.Mpdf.csproj">
-      <Project>{B17C6A4D-D985-404F-B286-7D229B388D56}</Project>
-      <Name>Lang.Php.Mpdf</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Lang.PHP\Lang.Php.csproj">
-      <Project>{ED717576-B7B9-4775-8236-1855E20E52D5}</Project>
-      <Name>Lang.Php</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\..\Extensions\Lang.Php.Mpdf\Lang.Php.Mpdf.csproj" />
+    <ProjectReference Include="..\..\Lang.PHP\Lang.Php.csproj" />
   </ItemGroup>
 </Project>

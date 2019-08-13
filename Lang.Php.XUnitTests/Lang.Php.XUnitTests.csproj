@@ -4,7 +4,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <VersionPrefix>1.2.1.1</VersionPrefix>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <AssemblyName>Lang.Php.XUnitTest</AssemblyName>
     <PackageId>Lang.Php.XUnitTest</PackageId>
     <Description>Lang.Php.XUnitTest</Description>
@@ -22,7 +22,7 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
   <PropertyGroup>
-    <DocumentationFile>bin\$(Configuration)\net462\$(ProjectName).xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\net472\$(ProjectName).xml</DocumentationFile>
     <ApplicationIcon />
     <OutputTypeEx>exe</OutputTypeEx>
     <StartupObject />
@@ -34,23 +34,14 @@
     <Content Include="Lang.Php.XUnitTest.xunit.runner.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lang.Cs2Php\Lang.Cs2Php.csproj">
-      <Project>{573007F1-9612-452C-8532-F54D18DE1724}</Project>
-      <Name>Lang.Cs2Php</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lang.Php.Test\Lang.Php.Test.csproj">
-      <Project>{F18A71C2-DE6A-4DDD-83FD-A1808688DFDA}</Project>
-      <Name>Lang.Php.Test</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lang.PHP\Lang.Php.csproj">
-      <Project>{ED717576-B7B9-4775-8236-1855E20E52D5}</Project>
-      <Name>Lang.Php</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\Lang.Cs2Php\Lang.Cs2Php.csproj" />
+    <ProjectReference Include="..\Lang.Php.Test\Lang.Php.Test.csproj" />
+    <ProjectReference Include="..\Lang.PHP\Lang.Php.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="2.2.0" />
-    <PackageReference Include="xunit" Version="2.1.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="3.2.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Lang.Php.XUnitTest.xunit.runner.json">
